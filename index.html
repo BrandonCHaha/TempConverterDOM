@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Converter</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row header">
+            <div class="col-12 d-flex justify-content-center">
+                <h1>The Magical Temperature Converter! Try if you dare!</h1>
+            </div>
+        </div>
+
+        <div class="row coolTable d-flex justify-content-center">
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <input type="text" name="startTemp" id="startTemp" placeholder="Starting Temp">
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <select name="dropDown1" id="dropDown1">  
+                    <option value="0">Temp. Unit</option>   
+                    <option value="1">F</option>
+                    <option value="2">C</option>
+                    <option value="3">K</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <label for="tempUnit">convert to </label>
+                <select name="dropDown2" id="dropDown2">     
+                    <option value="0">Temp. Unit</option>   
+                    <option value="1">F</option>
+                    <option value="2">C</option>
+                    <option value="3">K</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-5">
+                <button id = "convert">Convert</button>
+            </div>
+            <div class="col-5">
+                <h2 id="result">Result</h2>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="js/app.js"></script>
+</html>
